@@ -1,0 +1,4 @@
+
+{
+  "functions": { "app.js": { "includeFiles": "public/**" } }
+}
