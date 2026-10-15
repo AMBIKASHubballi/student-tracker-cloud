@@ -1,3 +1,4 @@
+import { db } from './database.js';
 import express from 'express';
 export function createApp(db) {
   const app = express();
@@ -42,4 +43,4 @@ export function createApp(db) {
     res.status(500).json({ error: 'Server error. Check the server terminal.' });
   });
   return app;
-}
+}export default createApp(db);
